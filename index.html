@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body> 
-    <!-- wrapper -->
-     <div>
+    <!-- wrapper div -->
+     <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#E6004A] gap-6">
 
-        <div>Increment And Decrement</div>
+        <div class="text-white font-medium text-[20px]">Increment And Decrement</div>
 
-        <div>
-            <button>
+        <div class="bg-[cyan] flex text-[25px] text-[#00000] rounded ga p-7 p-2 px-5">
+            <!-- negative btn -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-4">
                 <i class="fa-solid fa-minus"></i>
             </button>
-            <div></div>
-            <button>
+
+            <div id="value" class="font-bold">0</div>
+            <!-- positive btn -->
+            <button onclick="increment()" class ="border-l-2 border-[#bfbfbf] pl-4">
                 <i class="fa-solid fa-plus"></i>
             </button>
         </div>
 
      </div>
 
-
-     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/4359719cce.js" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
 </body>
 </html>
